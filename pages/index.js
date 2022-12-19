@@ -1,5 +1,12 @@
 import {BuzzFeedQuiz} from "react-buzzfeed-quiz";
 import "react-buzzfeed-quiz/lib/styles.css";
+import {Nunito_Sans} from '@next/font/google'
+
+// If loading a variable font, you don't need to specify the font weight
+const nunitoSans = Nunito_Sans({
+  subsets: ['latin'],
+  weight: '400',
+})
 
 export default function Home() {
   const sampleQuestions = [
@@ -173,7 +180,7 @@ export default function Home() {
             "resultID": 5
           },
           {
-            "answer": "Sandmännchen",
+            "answer": "Sand-männchen",
             "resultID": 3
           }
         ]
@@ -181,7 +188,7 @@ export default function Home() {
     ,
     {
       "question":
-        "Ich kaufe Weihnachtsgeschenke…",
+        "Ich kaufe Weihnachts-geschenke…",
       "answers":
         [
           {
@@ -270,7 +277,6 @@ export default function Home() {
       resultID: 2,
     },
   ];
-
   const answers = [
     {
       title: "MUTIG",
@@ -308,16 +314,21 @@ export default function Home() {
     },
   ];
 
+  const primary = "#0f173d";
+  const secondary = "#9095bb";
+  const tertiary = "#ff3300";
   return (
-    <>
+    <div className={nunitoSans.className}>
       <BuzzFeedQuiz
-        title={"Your title goes here."}
-        description={"Your description goes here."}
+        generalBackgroundColor={primary}
+        generalFontColor={"#ffffff"}
+        title={"welche orga bist du quiz"}
+        description={"Finde heraus welche Orga zu dir passt."}
         byline={true}
-        bylineAuthor={"Your name"}
-        bylineAuthorLink={"www.yourlink.com"}
+        bylineAuthor={"LeaveNoOneBehind"}
+        bylineAuthorLink={"https://strongertogether.lnob.net/"}
         bylineAuthorLinkOpenInNewTab={true}
-        bylineAuthorTagline={"Your author tagline goes here"}
+        bylineAuthorTagline={"#strongertogether"}
         autoScroll={true}
         onRestart={() => console.log("This alert was triggered by the onRestart prop!")}
         onResult={() => console.log("The onResult prop triggered this alert!")}
@@ -337,6 +348,6 @@ export default function Home() {
         questions={questions}
         results={answers}
       />
-    </>
+    </div>
   )
 }
