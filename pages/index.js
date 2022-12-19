@@ -2,6 +2,7 @@ import {BuzzFeedQuiz} from "react-buzzfeed-quiz";
 import "react-buzzfeed-quiz/lib/styles.css";
 import {Nunito_Sans} from '@next/font/google';
 import Chance from 'chance';
+import {useState} from "react";
 
 
 const chance = new Chance();
@@ -12,6 +13,7 @@ const nunitoSans = Nunito_Sans({
 })
 
 export default function Home() {
+
   const questions = [
     {
       "question": "Ich finde einen angefahrenen Igel an der Straße und ich",
@@ -284,14 +286,14 @@ export default function Home() {
     },
     {
       name: 'No Nation Truck',
-      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis97193918911232096-copy-400x400.jpeg',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/NNT-Logo-weiss.png',
       attributes: [1, 2],
       link: 'https://strongertogether.lnob.net/projekt/no-nation-truck/'
     },
 
     {
       name: 'Wir packens an',
-      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis9-400x400.jpg',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/WPA_Logo_w-1200x412.png',
       attributes: [2, 3],
       link: 'https://strongertogether.lnob.net/projekt/wir-packens-an/'
     },
@@ -384,17 +386,17 @@ export default function Home() {
     },
   ];
 
-  const resultOrgs = [1, 2, 3, 4, 5].map((resultId) => chance.pickone(orgs.filter((org) => org.attributes.includes(resultId))));
+  let resultOrgs = [1, 2, 3, 4, 5].map((resultId) => chance.pickone(orgs.filter((org) => org.attributes.includes(resultId))));
 
-  const results = [
+  const [results, setResults] = useState([
     {
       title: "MUTIG",
       description: <>
         <span>Herzlichen Glückwunsch, Braveheart! Du gehst furchtlos deinen Weg. Du bist mutig. Du
         bist {resultOrgs[0].name}.</span>
-        <br />
-        <br />
-        <span><a href={resultOrgs[0].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+        <br/>
+        <br/>
+        <span><a href={resultOrgs[0].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
       </>,
       resultID: 1,
       resultImageSrc: resultOrgs[0].imageUrl
@@ -404,9 +406,9 @@ export default function Home() {
       title: "KREATIV",
       description: <>
         <span>Wow, deine Kreativität ist grenzenlos! Du denkst unkonventionell. Du bist künstlerisch. Du bist {resultOrgs[1].name}.</span>
-        <br />
-        <br />
-        <span><a href={resultOrgs[1].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+        <br/>
+        <br/>
+        <span><a href={resultOrgs[1].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
       </>,
       resultID: 2,
       resultImageSrc: resultOrgs[1].imageUrl
@@ -416,9 +418,9 @@ export default function Home() {
       title: "FÜRSORGLICH",
       description: <>
         <span>Oh wow, dich hätte ich gerne als Freund. LeaveNoOneBehind ist genau deine Philosophie. Du lässt niemanden hängen. Du bist fürsorglich, du bist {resultOrgs[2].name}.</span>
-        <br />
-        <br />
-        <span><a href={resultOrgs[2].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+        <br/>
+        <br/>
+        <span><a href={resultOrgs[2].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
       </>,
       resultID: 3,
       resultImageSrc: resultOrgs[2].imageUrl
@@ -428,9 +430,9 @@ export default function Home() {
       title: "DRAUFGÄNGERISCH",
       description: <>
         <span>High-Five Draufgänger! Du lachst der Gefahr ins Gesicht. Keine Angst vor niemandem, du bist {resultOrgs[3].name}.</span>
-        <br />
-        <br />
-        <span><a href={resultOrgs[3].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+        <br/>
+        <br/>
+        <span><a href={resultOrgs[3].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
       </>,
       resultID: 4,
       resultImageSrc: resultOrgs[3].imageUrl
@@ -438,16 +440,16 @@ export default function Home() {
 
     {
       title: "CLEVER",
-      description:  <>
+      description: <>
         <span>Geht nicht? Gibt’s nicht. Du findest schlaue Lösungen und bist blitzgescheit. Du bist {resultOrgs[4].name}.</span>
-        <br />
-        <br />
-        <span><a href={resultOrgs[4].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+        <br/>
+        <br/>
+        <span><a href={resultOrgs[4].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
       </>,
       resultID: 5,
       resultImageSrc: resultOrgs[4].imageUrl
     },
-  ];
+  ]);
 
   const primary = "#0f173d";
   const secondary = "#9095bb";
@@ -465,7 +467,72 @@ export default function Home() {
         bylineAuthorLinkOpenInNewTab={true}
         bylineAuthorTagline={"#strongertogether"}
         autoScroll={true}
-        onRestart={() => console.log("This alert was triggered by the onRestart prop!")}
+        onRestart={() => {
+          console.log("This alert was triggered by the onRestart prop!");
+          resultOrgs = [1, 2, 3, 4, 5].map((resultId) => chance.pickone(orgs.filter((org) => org.attributes.includes(resultId))));
+          setResults([
+            {
+              title: "MUTIG",
+              description: <>
+        <span>Herzlichen Glückwunsch, Braveheart! Du gehst furchtlos deinen Weg. Du bist mutig. Du
+        bist {resultOrgs[0].name}.</span>
+                <br/>
+                <br/>
+                <span><a href={resultOrgs[0].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
+              </>,
+              resultID: 1,
+              resultImageSrc: resultOrgs[0].imageUrl
+            },
+
+            {
+              title: "KREATIV",
+              description: <>
+                <span>Wow, deine Kreativität ist grenzenlos! Du denkst unkonventionell. Du bist künstlerisch. Du bist {resultOrgs[1].name}.</span>
+                <br/>
+                <br/>
+                <span><a href={resultOrgs[1].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
+              </>,
+              resultID: 2,
+              resultImageSrc: resultOrgs[1].imageUrl
+            },
+
+            {
+              title: "FÜRSORGLICH",
+              description: <>
+                <span>Oh wow, dich hätte ich gerne als Freund. LeaveNoOneBehind ist genau deine Philosophie. Du lässt niemanden hängen. Du bist fürsorglich, du bist {resultOrgs[2].name}.</span>
+                <br/>
+                <br/>
+                <span><a href={resultOrgs[2].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
+              </>,
+              resultID: 3,
+              resultImageSrc: resultOrgs[2].imageUrl
+            },
+
+            {
+              title: "DRAUFGÄNGERISCH",
+              description: <>
+                <span>High-Five Draufgänger! Du lachst der Gefahr ins Gesicht. Keine Angst vor niemandem, du bist {resultOrgs[3].name}.</span>
+                <br/>
+                <br/>
+                <span><a href={resultOrgs[3].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
+              </>,
+              resultID: 4,
+              resultImageSrc: resultOrgs[3].imageUrl
+            },
+
+            {
+              title: "CLEVER",
+              description: <>
+                <span>Geht nicht? Gibt’s nicht. Du findest schlaue Lösungen und bist blitzgescheit. Du bist {resultOrgs[4].name}.</span>
+                <br/>
+                <br/>
+                <span><a href={resultOrgs[4].link} target={"_blank"} rel="noreferrer">Spende jetzt für dieses Projekt</a></span>
+              </>,
+              resultID: 5,
+              resultImageSrc: resultOrgs[4].imageUrl
+            },
+          ]);
+        }}
         onResult={() => console.log("The onResult prop triggered this alert!")}
         onAnswerSelection={(questionIndex, answerIndex, resultID) =>
           console.log({
