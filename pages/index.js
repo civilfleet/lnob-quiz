@@ -4,7 +4,9 @@ import {Nunito_Sans} from '@next/font/google';
 import Chance from 'chance';
 import {useState} from "react";
 
-
+const primary = "#0f173d";
+const secondary = "#9095bb";
+const tertiary = "#ff3300";
 const chance = new Chance();
 // If loading a variable font, you don't need to specify the font weight
 const nunitoSans = Nunito_Sans({
@@ -17,6 +19,7 @@ export default function Home() {
   const questions = [
     {
       "question": "Ich finde einen angefahrenen Igel an der Straße und ich",
+      backgroundColor: secondary,
       "answers": [
         {
           "answer": "nehme ihn mit nach Hause und pflege ihn",
@@ -36,8 +39,8 @@ export default function Home() {
         }]
     },
     {
-      "question":
-        "Mein Lieblings-Emoji",
+      "question": "Mein Lieblings-Emoji",
+      backgroundColor: secondary,
       "answers":
         [
           {
@@ -60,8 +63,8 @@ export default function Home() {
     }
     ,
     {
-      "question":
-        "Mein Kindheitsheld",
+      "question": "Mein Kindheitsheld",
+      backgroundColor: secondary,
       "answers":
         [
           {
@@ -84,8 +87,8 @@ export default function Home() {
     }
     ,
     {
-      "question":
-        "Ich kaufe Weihnachts-geschenke…",
+      "question": "Ich kaufe Weihnachts-geschenke…",
+      backgroundColor: secondary,
       "answers":
         [
           {
@@ -108,8 +111,8 @@ export default function Home() {
     }
     ,
     {
-      "question":
-        "Mein Flirtspruch:",
+      "question": "Mein Flirtspruch:",
+      backgroundColor: secondary,
       "answers":
         [
           {
@@ -132,8 +135,8 @@ export default function Home() {
     }
     ,
     {
-      "question":
-        "Das perfekte erste Date",
+      "question": "Das perfekte erste Date",
+      backgroundColor: secondary,
       "answers":
         [
           {
@@ -451,9 +454,7 @@ export default function Home() {
     },
   ]);
 
-  const primary = "#0f173d";
-  const secondary = "#9095bb";
-  const tertiary = "#ff3300";
+
   return (
     <div className={nunitoSans.className}>
       <BuzzFeedQuiz
