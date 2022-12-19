@@ -280,35 +280,35 @@ export default function Home() {
   const answers = [
     {
       title: "MUTIG",
-      description: "Herzlichen Glückwunsch, Braveheart! Du gehst furchtlos deinen Weg. Du bist mutig. Du bist",
+      description: `Herzlichen Glückwunsch, Braveheart! Du gehst furchtlos deinen Weg. Du bist mutig. Du bist`,
       imageAttribution: "Your photo attribution text goes here",
       resultID: 1,
     },
 
     {
       title: "KREATIV",
-      description: "Wow, deine Kreativität ist grenzenlos! Du denkst unkonventionell. Du bist künstlerisch. Du bist",
+      description: `Wow, deine Kreativität ist grenzenlos! Du denkst unkonventionell. Du bist künstlerisch. Du bist`,
       imageAttribution: "Your photo attribution text goes here",
       resultID: 2,
     },
 
     {
       title: "FÜRSORGLICH",
-      description: "Oh wow, dich hätte ich gerne als Freund. LeaveNoOneBehind ist genau deine Philosophie. Du lässt niemanden hängen. Du bist fürsorglich, du bist",
+      description: `Oh wow, dich hätte ich gerne als Freund. LeaveNoOneBehind ist genau deine Philosophie. Du lässt niemanden hängen. Du bist fürsorglich, du bist`,
       imageAttribution: "Your photo attribution text goes here",
       resultID: 3,
     },
 
     {
       title: "DRAUFGÄNGERISCH",
-      description: "High-Five Draufgänger! Du lachst der Gefahr ins Gesicht. Keine Angst vor niemandem, du bist",
+      description: `High-Five Draufgänger! Du lachst der Gefahr ins Gesicht. Keine Angst vor niemandem, du bist`,
       imageAttribution: "Your photo attribution text goes here",
       resultID: 4,
     },
 
     {
       title: "CLEVER",
-      description: "Geht nicht? Gibt’s nicht. Du findest schlaue Lösungen und bist blitzgescheit. Du bist",
+      description: `Geht nicht? Gibt’s nicht. Du findest schlaue Lösungen und bist blitzgescheit. Du bist`,
       imageAttribution: "Your photo attribution text goes here",
       resultID: 5,
     },
@@ -324,7 +324,7 @@ export default function Home() {
         generalFontColor={"#ffffff"}
         title={"welche orga bist du quiz"}
         description={"Finde heraus welche Orga zu dir passt."}
-        byline={true}
+        byline={false}
         bylineAuthor={"LeaveNoOneBehind"}
         bylineAuthorLink={"https://strongertogether.lnob.net/"}
         bylineAuthorLinkOpenInNewTab={true}
