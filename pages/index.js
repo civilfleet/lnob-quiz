@@ -459,7 +459,7 @@ export default function Home() {
       <BuzzFeedQuiz
         generalBackgroundColor={primary}
         generalFontColor={"#ffffff"}
-        title={"welche orga bist du quiz"}
+        title={"Welche Orga bist du?"}
         description={"Finde heraus welche Orga zu dir passt."}
         byline={false}
         bylineAuthor={"LeaveNoOneBehind"}
@@ -542,11 +542,11 @@ export default function Home() {
           })
         }
         facebookShareButton={true}
-        facebookShareLink={"www.yourlink.com"}
+        facebookShareLink={"https://strongertogether.lnob.net/quiz"}
         twitterShareButton={true}
-        twitterShareLink={"www.yourlink.com"}
+        twitterShareLink={"https://strongertogether.lnob.net/quiz"}
         copyShareButton={true}
-        copyShareLink={"This text was copied using the copyShareLink prop."}
+        copyShareLink={"https://strongertogether.lnob.net/quiz"}
         questions={questions}
         results={results}
       />
