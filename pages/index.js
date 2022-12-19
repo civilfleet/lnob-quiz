@@ -157,210 +157,230 @@ export default function Home() {
     {
       name: 'BASE UA',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/BASE_Logo_W_UA-1200x882.png',
-      attributes: [1, 3, 4]
-    },
-    {
-      name: 'TMR',
-      imageUrl: '',
-      attributes: [1, 4]
+      attributes: [1, 3, 4],
+      link: 'https://strongertogether.lnob.net/projekt/base-ua/'
     },
     {
       name: 'Libereco',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Libereco-400x111.png',
-      attributes: [1, 5]
+      attributes: [1, 5],
+      link: 'https://strongertogether.lnob.net/projekt/libereco/'
     },
     {
       name: 'MVI Serbien',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/MVI_Logo-1200x303.png',
-      attributes: [3, 5]
+      attributes: [3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/medical-volunteers-international/'
     },
     {
       name: 'Blindspots',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Blindspots_Logo_w-1200x986.png',
-      attributes: [3, 5]
+      attributes: [3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/blindspots/'
     },
     {
       name: 'SOS Balkanroute',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_SOSB.png',
-      attributes: [3]
+      attributes: [3],
+      link: 'https://strongertogether.lnob.net/projekt/sos-balkanroute/'
     },
     {
       name: 'Netzwerk Ziviler Krisenstab',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_NZK-400x227.png',
-      attributes: [5]
+      attributes: [5],
+      link: 'https://strongertogether.lnob.net/projekt/netzwerk-ziviler-krisenstab/'
     },
 
     {
       name: 'Ukraine - Hilfe Berlin',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_UHB.png',
-      attributes: [3]
+      attributes: [3],
+      link: 'https://strongertogether.lnob.net/projekt/ukraine-hilfe-berlin/'
     },
 
 
     {
       name: 'Equal Rights beyond borders',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_ERBB-1200x286.png',
-      attributes: [3, 5]
+      attributes: [3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/equal-rights-beyond-borders/'
     },
     {
       name: 'Aegean Boat Report',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/ABR_R-1200x1042.png',
-      attributes: [1, 3, 5]
+      attributes: [1, 3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/aegean-boat-report/'
     },
 
     {
       name: 'Fenix',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Fenix-400x167.png',
-      attributes: [3, 5]
+      attributes: [3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/fenix/'
     },
 
     {
       name: 'Legal Center Lesvos',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_LCL.png',
-      attributes: [3, 5]
+      attributes: [3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/legal-center-lesvos/'
     },
 
     {
       name: 'Parea Center (Europe Cares)',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/ECLogo.png',
-      attributes: [2, 3]
+      attributes: [2, 3],
+      link: 'https://strongertogether.lnob.net/projekt/europe-cares/'
     },
 
     {
       name: 'Rosa Safe Space',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_ROSA_Weiss-1200x500.png',
-      attributes: [2, 3]
+      attributes: [2, 3],
+      link: 'https://strongertogether.lnob.net/projekt/roliling-safespace/'
     },
 
     {
       name: 'Earth medicine physical rehabilitation',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_EM.png',
-      attributes: [3, 5]
+      attributes: [3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/earth-medicine/'
     },
 
     {
       name: 'Yoga & Sports',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_YS-1200x1048.png',
-      attributes: [2, 3]
+      attributes: [2, 3],
+      link: 'https://strongertogether.lnob.net/projekt/yoga-and-sports/'
     },
 
     {
       name: 'Makerspace Lesvos',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Makerspace.png',
-      attributes: [2, 5]
+      attributes: [2, 5],
+      link: 'https://strongertogether.lnob.net/projekt/makerspace-lesvos/'
     },
 
     {
       name: 'Just Action Samos',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_JAS-400x400.png',
-      attributes: [3]
+      attributes: [3],
+      link: 'https://strongertogether.lnob.net/projekt/just-action-samos/'
     },
 
 
     {
       name: 'MVI Lesbos',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/MVI_Logo-1200x303.png',
-      attributes: [3, 5]
+      attributes: [3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/medical-volunteers-international/'
     },
 
     {
       name: 'Boat Theater Group',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis7-400x400.jpg',
-      attributes: [2, 5]
+      attributes: [2, 5],
+      link: 'https://strongertogether.lnob.net/projekt/boat-theater-group/'
     },
-    {
-      name: 'Babel Athen',
-      imageUrl: '',
-      attributes: [3, 5]
-    },
-
     {
       name: 'No Nation Truck',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis97193918911232096-copy-400x400.jpeg',
-      attributes: [1, 2]
+      attributes: [1, 2],
+      link: 'https://strongertogether.lnob.net/projekt/no-nation-truck/'
     },
 
     {
       name: 'Wir packens an',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis9-400x400.jpg',
-      attributes: [2, 3]
+      attributes: [2, 3],
+      link: 'https://strongertogether.lnob.net/projekt/wir-packens-an/'
     },
 
     {
       name: 'Solibus',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Solibus-1200x958.png',
-      attributes: [2, 3]
+      attributes: [2, 3],
+      link: 'https://strongertogether.lnob.net/projekt/solibus_neu/'
     },
     {
       name: 'Visions for Children',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Visions-400x132.png',
-      attributes: [1, 3, 5]
+      attributes: [1, 3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/visions-for-children/'
     },
     {
       name: 'Kabul Luftbrücke',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/signal-2022-12-07-190127_002.png',
-      attributes: [1, 4]
+      attributes: [1, 4],
+      link: 'https://strongertogether.lnob.net/projekt/kabulluftbruecke-lnob/'
     },
 
     {
       name: 'Hawar Help',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Hawar_Logo-400x308.png',
-      attributes: [3, 5]
+      attributes: [3, 5],
+      link: 'https://strongertogether.lnob.net/projekt/hawar-help/'
     },
 
     {
       name: 'Hawar Help Scoring Girls*',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Scoring_Girls.png',
-      attributes: [2, 3]
+      attributes: [2, 3],
+      link: 'https://strongertogether.lnob.net/projekt/hawar-help-fussball/'
     },
-
-
     {
       name: 'No Name Kitchen',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/NNK_Logo-1200x1160.png',
-      attributes: [1, 2]
+      attributes: [1, 2],
+      link: 'https://strongertogether.lnob.net/projekt/no-name-kitchen/'
     },
 
 
     {
       name: 'Liebe im Karton',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis26-2-400x400.jpg',
-      attributes: [2, 3]
+      attributes: [2, 3],
+      link: 'https://strongertogether.lnob.net/projekt/liebe-im-karton/'
     },
 
 
     {
       name: 'Seapunks',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/Logo_SP.png',
-      attributes: [1, 5]
+      attributes: [1, 5],
+      link: 'https://strongertogether.lnob.net/projekt/sea-punks/'
     },
 
 
     {
       name: 'refocus media labs',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Refocus-1200x1158.png',
-      attributes: [2, 5]
+      attributes: [2, 5],
+      link: 'https://strongertogether.lnob.net/projekt/refocus-media-labs/'
     },
 
 
     {
       name: 'pinkbus / helpbus',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Helpbus.png',
-      attributes: [3]
+      attributes: [3],
+      link: 'https://strongertogether.lnob.net/projekt/helpbus/'
     },
 
 
     {
       name: 'Iranjournal',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Iran_Logo.png',
-      attributes: [1, 5]
+      attributes: [1, 5],
+      link: 'https://strongertogether.lnob.net/projekt/iran-journal/'
     },
 
 
     {
       name: 'Human Plus e.V.',
       imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/humanplus_logo-2.png',
-      attributes: [1]
+      attributes: [1],
+      link: 'https://strongertogether.lnob.net/projekt/human-plus-iran/'
     },
   ];
 
@@ -369,35 +389,61 @@ export default function Home() {
   const results = [
     {
       title: "MUTIG",
-      description: `Herzlichen Glückwunsch, Braveheart! Du gehst furchtlos deinen Weg. Du bist mutig. Du bist ${resultOrgs[0].name}`,
+      description: <>
+        <span>Herzlichen Glückwunsch, Braveheart! Du gehst furchtlos deinen Weg. Du bist mutig. Du
+        bist {resultOrgs[0].name}.</span>
+        <br />
+        <br />
+        <span><a href={resultOrgs[0].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+      </>,
       resultID: 1,
       resultImageSrc: resultOrgs[0].imageUrl
     },
 
     {
       title: "KREATIV",
-      description: `Wow, deine Kreativität ist grenzenlos! Du denkst unkonventionell. Du bist künstlerisch. Du bist ${resultOrgs[1].name}`,
+      description: <>
+        <span>Wow, deine Kreativität ist grenzenlos! Du denkst unkonventionell. Du bist künstlerisch. Du bist {resultOrgs[1].name}.</span>
+        <br />
+        <br />
+        <span><a href={resultOrgs[1].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+      </>,
       resultID: 2,
       resultImageSrc: resultOrgs[1].imageUrl
     },
 
     {
       title: "FÜRSORGLICH",
-      description: `Oh wow, dich hätte ich gerne als Freund. LeaveNoOneBehind ist genau deine Philosophie. Du lässt niemanden hängen. Du bist fürsorglich, du bist ${resultOrgs[2].name}`,
+      description: <>
+        <span>Oh wow, dich hätte ich gerne als Freund. LeaveNoOneBehind ist genau deine Philosophie. Du lässt niemanden hängen. Du bist fürsorglich, du bist {resultOrgs[2].name}.</span>
+        <br />
+        <br />
+        <span><a href={resultOrgs[2].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+      </>,
       resultID: 3,
       resultImageSrc: resultOrgs[2].imageUrl
     },
 
     {
       title: "DRAUFGÄNGERISCH",
-      description: `High-Five Draufgänger! Du lachst der Gefahr ins Gesicht. Keine Angst vor niemandem, du bist ${resultOrgs[3].name}`,
+      description: <>
+        <span>High-Five Draufgänger! Du lachst der Gefahr ins Gesicht. Keine Angst vor niemandem, du bist {resultOrgs[3].name}.</span>
+        <br />
+        <br />
+        <span><a href={resultOrgs[3].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+      </>,
       resultID: 4,
       resultImageSrc: resultOrgs[3].imageUrl
     },
 
     {
       title: "CLEVER",
-      description: `Geht nicht? Gibt’s nicht. Du findest schlaue Lösungen und bist blitzgescheit. Du bist ${resultOrgs[4].name}`,
+      description:  <>
+        <span>Geht nicht? Gibt’s nicht. Du findest schlaue Lösungen und bist blitzgescheit. Du bist {resultOrgs[4].name}.</span>
+        <br />
+        <br />
+        <span><a href={resultOrgs[4].link} target={"_blank"}>Spende jetzt für dieses Projekt</a></span>
+      </>,
       resultID: 5,
       resultImageSrc: resultOrgs[4].imageUrl
     },
