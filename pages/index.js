@@ -12,114 +12,6 @@ const nunitoSans = Nunito_Sans({
 })
 
 export default function Home() {
-  const sampleQuestions = [
-    {
-      question: "Here's a default question",
-      answers: [
-        {
-          answer: "Answer one",
-          resultID: 0,
-        },
-        {
-          answer: "Answer two",
-          resultID: 1,
-        },
-        {
-          answer: "Answer three",
-          resultID: 2,
-        },
-      ],
-    },
-    {
-      question: "Let's add some background and font colors",
-      backgroundColor: "rgb(211, 211, 211)",
-      fontColor: "#000",
-      answers: [
-        {
-          answer: "First answer",
-          backgroundColor: "red",
-          fontColor: "rgb(215, 215, 215)",
-          resultID: 0,
-        },
-        {
-          answer: "Second answer",
-          backgroundColor: "orange",
-          fontColor: "green",
-          resultID: 1,
-        },
-        {
-          answer: "Third answer",
-          backgroundColor: "yellow",
-          fontColor: "#000",
-          resultID: 2,
-          revealResponse: {
-            title: "Here's an answer response!",
-            description: "Here's a description for the answer response!",
-            imageAttribution: "Answer response image attribution text goes here",
-          },
-        },
-      ],
-    },
-    {
-      question: "Here is some overlapping image text",
-      questionRelativeToImage: "overlap",
-      imageAttribution: "Question image attribution text goes here",
-      answerArrangement: "tile",
-      answers: [
-        {
-          answer: "This answer has a background photo",
-          resultID: 0,
-          imageAttribution: "Answer photo attribution text goes here",
-        },
-        {
-          answer: "Not this one, though",
-          resultID: 1,
-          backgroundColor: "rgb(238,243,247)",
-          fontColor: "rgb(53,51,48)",
-        },
-        {
-          answer: "Not this one, either",
-          resultID: 2,
-          backgroundColor: "rgb(238,243,247)",
-          fontColor: "rgb(53,51,48)",
-        },
-      ],
-    },
-    {
-      question: "Here is some adjacent image text",
-      questionRelativeToImage: "adjacent",
-      answerArrangement: "row",
-      answers: [
-        {
-          answer: "Answer one",
-          resultID: 0,
-        },
-        {
-          answer: "Answer two",
-          resultID: 1,
-        },
-        {
-          answer: "Answer three",
-          resultID: 2,
-        },
-      ],
-    },
-    {
-      question: "Answers can also trigger a callback function",
-      answers: [
-        {
-          answer: "This one does not trigger a function",
-          resultID: 0,
-        },
-        {
-          answer: "Click for answer function",
-          onAnswerSelection: (questionIndex, answerIndex, resultID) =>
-            alert("This alert is caused by an answer selection!"),
-          resultID: 1,
-        },
-      ],
-    },
-  ];
   const questions = [
     {
       "question": "Ich finde einen angefahrenen Igel an der Straße und ich",
@@ -264,7 +156,7 @@ export default function Home() {
   let orgs = [
     {
       name: 'BASE UA',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/BASE_Logo_W_UA-1200x882.png',
       attributes: [1, 3, 4]
     },
     {
@@ -274,106 +166,106 @@ export default function Home() {
     },
     {
       name: 'Libereco',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Libereco-400x111.png',
       attributes: [1, 5]
     },
     {
       name: 'MVI Serbien',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/MVI_Logo-1200x303.png',
       attributes: [3, 5]
     },
     {
       name: 'Blindspots',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Blindspots_Logo_w-1200x986.png',
       attributes: [3, 5]
     },
     {
       name: 'SOS Balkanroute',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_SOSB.png',
       attributes: [3]
     },
     {
       name: 'Netzwerk Ziviler Krisenstab',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_NZK-400x227.png',
       attributes: [5]
     },
 
     {
       name: 'Ukraine - Hilfe Berlin',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_UHB.png',
       attributes: [3]
     },
 
 
     {
       name: 'Equal Rights beyond borders',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_ERBB-1200x286.png',
       attributes: [3, 5]
     },
     {
       name: 'Aegean Boat Report',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/ABR_R-1200x1042.png',
       attributes: [1, 3, 5]
     },
 
     {
       name: 'Fenix',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Fenix-400x167.png',
       attributes: [3, 5]
     },
 
     {
       name: 'Legal Center Lesvos',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_LCL.png',
       attributes: [3, 5]
     },
 
     {
       name: 'Parea Center (Europe Cares)',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/ECLogo.png',
       attributes: [2, 3]
     },
 
     {
       name: 'Rosa Safe Space',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_ROSA_Weiss-1200x500.png',
       attributes: [2, 3]
     },
 
     {
       name: 'Earth medicine physical rehabilitation',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_EM.png',
       attributes: [3, 5]
     },
 
     {
       name: 'Yoga & Sports',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_YS-1200x1048.png',
       attributes: [2, 3]
     },
 
     {
       name: 'Makerspace Lesvos',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Makerspace.png',
       attributes: [2, 5]
     },
 
     {
       name: 'Just Action Samos',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_JAS-400x400.png',
       attributes: [3]
     },
 
 
     {
       name: 'MVI Lesbos',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/MVI_Logo-1200x303.png',
       attributes: [3, 5]
     },
 
     {
       name: 'Boat Theater Group',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis7-400x400.jpg',
       attributes: [2, 5]
     },
     {
@@ -384,148 +276,130 @@ export default function Home() {
 
     {
       name: 'No Nation Truck',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis97193918911232096-copy-400x400.jpeg',
       attributes: [1, 2]
     },
 
     {
       name: 'Wir packens an',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis9-400x400.jpg',
       attributes: [2, 3]
     },
 
     {
       name: 'Solibus',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Solibus-1200x958.png',
       attributes: [2, 3]
     },
     {
       name: 'Visions for Children',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Visions-400x132.png',
       attributes: [1, 3, 5]
     },
     {
       name: 'Kabul Luftbrücke',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/signal-2022-12-07-190127_002.png',
       attributes: [1, 4]
     },
 
     {
       name: 'Hawar Help',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Hawar_Logo-400x308.png',
       attributes: [3, 5]
     },
 
     {
-      name: 'Hawar Help Fussball',
-      imageUrl: '',
+      name: 'Hawar Help Scoring Girls*',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Scoring_Girls.png',
       attributes: [2, 3]
     },
 
 
     {
       name: 'No Name Kitchen',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/NNK_Logo-1200x1160.png',
       attributes: [1, 2]
     },
 
 
     {
       name: 'Liebe im Karton',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/StrongerTogether_Promis26-2-400x400.jpg',
       attributes: [2, 3]
     },
 
 
     {
       name: 'Seapunks',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/Logo_SP.png',
       attributes: [1, 5]
     },
 
 
     {
       name: 'refocus media labs',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Refocus-1200x1158.png',
       attributes: [2, 5]
     },
 
 
     {
       name: 'pinkbus / helpbus',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Logo_Helpbus.png',
       attributes: [3]
     },
 
 
     {
       name: 'Iranjournal',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/11/Iran_Logo.png',
       attributes: [1, 5]
     },
 
 
     {
       name: 'Human Plus e.V.',
-      imageUrl: '',
+      imageUrl: 'https://strongertogether.lnob.net/wp-content/uploads/2022/12/humanplus_logo-2.png',
       attributes: [1]
     },
   ];
 
-  const sampleResults = [
-    {
-      title: "Your first result title goes here",
-      description: "Your first result description goes here",
-      imageAttribution: "Your photo attribution text goes here",
-      resultID: 0,
-    },
-    {
-      title: "Your second result title goes here",
-      description: "Your second result description goes here",
-      resultID: 1,
-    },
-    {
-      title: "Your third result title goes here",
-      description: "Result images and attributions are optional!",
-      resultID: 2,
-    },
-  ];
-
+  const resultOrgs = [1, 2, 3, 4, 5].map((resultId) => chance.pickone(orgs.filter((org) => org.attributes.includes(resultId))));
 
   const results = [
     {
       title: "MUTIG",
-      description: `Herzlichen Glückwunsch, Braveheart! Du gehst furchtlos deinen Weg. Du bist mutig. Du bist ${chance.pickone(orgs.filter((org) => org.attributes.includes(1))).name} <a>test</a>`,
-      imageAttribution: "Your photo attribution text goes here",
+      description: `Herzlichen Glückwunsch, Braveheart! Du gehst furchtlos deinen Weg. Du bist mutig. Du bist ${resultOrgs[0].name}`,
       resultID: 1,
+      resultImageSrc: resultOrgs[0].imageUrl
     },
 
     {
       title: "KREATIV",
-      description: `Wow, deine Kreativität ist grenzenlos! Du denkst unkonventionell. Du bist künstlerisch. Du bist ${chance.pickone(orgs.filter((org) => org.attributes.includes(2))).name}`,
-      imageAttribution: "Your photo attribution text goes here",
+      description: `Wow, deine Kreativität ist grenzenlos! Du denkst unkonventionell. Du bist künstlerisch. Du bist ${resultOrgs[1].name}`,
       resultID: 2,
+      resultImageSrc: resultOrgs[1].imageUrl
     },
 
     {
       title: "FÜRSORGLICH",
-      description: `Oh wow, dich hätte ich gerne als Freund. LeaveNoOneBehind ist genau deine Philosophie. Du lässt niemanden hängen. Du bist fürsorglich, du bist ${chance.pickone(orgs.filter((org) => org.attributes.includes(3))).name}`,
-      imageAttribution: "Your photo attribution text goes here",
+      description: `Oh wow, dich hätte ich gerne als Freund. LeaveNoOneBehind ist genau deine Philosophie. Du lässt niemanden hängen. Du bist fürsorglich, du bist ${resultOrgs[2].name}`,
       resultID: 3,
+      resultImageSrc: resultOrgs[2].imageUrl
     },
 
     {
       title: "DRAUFGÄNGERISCH",
-      description: `High-Five Draufgänger! Du lachst der Gefahr ins Gesicht. Keine Angst vor niemandem, du bist ${chance.pickone(orgs.filter((org) => org.attributes.includes(4))).name}`,
-      imageAttribution: "Your photo attribution text goes here",
+      description: `High-Five Draufgänger! Du lachst der Gefahr ins Gesicht. Keine Angst vor niemandem, du bist ${resultOrgs[3].name}`,
       resultID: 4,
+      resultImageSrc: resultOrgs[3].imageUrl
     },
 
     {
       title: "CLEVER",
-      description: `Geht nicht? Gibt’s nicht. Du findest schlaue Lösungen und bist blitzgescheit. Du bist ${chance.pickone(orgs.filter((org) => org.attributes.includes(5))).name}`,
-      imageAttribution: "Your photo attribution text goes here",
+      description: `Geht nicht? Gibt’s nicht. Du findest schlaue Lösungen und bist blitzgescheit. Du bist ${resultOrgs[4].name}`,
       resultID: 5,
+      resultImageSrc: resultOrgs[4].imageUrl
     },
   ];
 

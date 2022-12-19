@@ -43,3 +43,13 @@
 .rbq_individual_answer_container{
   height: auto !important;
 }
+
+.rbq_result_outer_container {
+  background-image: none !important;
+  background-color: #ff3300 !important;
+}
+
+.rbq_result_inner_container {
+  background: #9095bb !important;
+  color: #FFFFFF;
+}
