@@ -543,11 +543,11 @@ export default function Home() {
           })
         }
         facebookShareButton={true}
-        facebookShareLink={"https://strongertogether.lnob.net/quiz"}
+        facebookShareLink={"https://strongertogether.lnob.net/orga-spenden-quiz/"}
         twitterShareButton={true}
-        twitterShareLink={"https://strongertogether.lnob.net/quiz"}
+        twitterShareLink={"https://strongertogether.lnob.net/orga-spenden-quiz/"}
         copyShareButton={true}
-        copyShareLink={"https://strongertogether.lnob.net/quiz"}
+        copyShareLink={"https://strongertogether.lnob.net/orga-spenden-quiz/"}
         questions={questions}
         results={results}
       />
