@@ -104,15 +104,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/font@npm:14.0.4":
-  version: 14.0.4
-  resolution: "@next/font@npm:14.0.4"
-  peerDependencies:
-    next: "*"
-  checksum: df1d12993754809ed0f1158e9a99f3d22df36c83761b2dff3d974aa9b050b4a7825d67eac55c92089b7aa30c7bc34b1761b17dbb6e78a5860e83062d1497a58e
-  languageName: node
-  linkType: hard
-
 "@next/swc-darwin-arm64@npm:14.0.4":
   version: 14.0.4
   resolution: "@next/swc-darwin-arm64@npm:14.0.4"
@@ -1836,7 +1827,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "lnob-quiz@workspace:."
   dependencies:
-    "@next/font": 14.0.4
     chance: ^1.1.11
     eslint: 8.56.0
     eslint-config-next: 14.0.4
