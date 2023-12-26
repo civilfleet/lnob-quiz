@@ -1,6 +1,6 @@
 import {BuzzFeedQuiz} from "react-buzzfeed-quiz";
 import "react-buzzfeed-quiz/lib/styles.css";
-import {Nunito_Sans} from '@next/font/google';
+import {Nunito_Sans} from 'next/font/google';
 import Chance from 'chance';
 import {useState} from "react";
 
