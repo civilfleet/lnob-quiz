@@ -1,7 +1,7 @@
-import dynamic from "next/dynamic";
 import {Nunito_Sans} from 'next/font/google';
 import Chance from 'chance';
 import {useState} from "react";
+import {BuzzFeedQuiz} from "react-buzzfeed-quiz";
 
 const primary = "#0f173d";
 const secondary = "#9095bb";
@@ -12,11 +12,6 @@ const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
   weight: '400',
 })
-
-const BuzzFeedQuiz = dynamic(
-  () => import("react-buzzfeed-quiz").then((module) => module.BuzzFeedQuiz),
-  {ssr: false}
-);
 
 export default function Home() {
 
