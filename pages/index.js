@@ -388,7 +388,7 @@ export default function Home() {
     },
   ];
 
-  let resultOrgs = [1, 2, 3, 4, 5].map((resultId) => chance.pickone(orgs.filter((org) => org.attributes.includes(resultId))));
+  const resultOrgs = [1, 2, 3, 4, 5].map((resultId) => chance.pickone(orgs.filter((org) => org.attributes.includes(resultId))));
 
   const [results, setResults] = useState([
     {
@@ -469,7 +469,7 @@ export default function Home() {
         autoScroll={true}
         onRestart={() => {
           console.log("This alert was triggered by the onRestart prop!");
-          resultOrgs = [1, 2, 3, 4, 5].map((resultId) => chance.pickone(orgs.filter((org) => org.attributes.includes(resultId))));
+          const resultOrgs = [1, 2, 3, 4, 5].map((resultId) => chance.pickone(orgs.filter((org) => org.attributes.includes(resultId))));
           setResults([
             {
               title: "MUTIG",
